@@ -9,8 +9,6 @@ type Props = {
 }
 
 export const Button: React.FC<Props> = ({ icon, children }) => {
-  console.log(icon)
-
   return (
     <ButtonUI>
       {icon && <FontAwesomeIcon icon={icon} />}

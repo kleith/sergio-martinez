@@ -1,14 +1,39 @@
 import styled from "styled-components"
 
 import { shadow } from "../utils/css"
+import { device } from "../config/devices"
+
+export const Scroller = styled.div`
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background-color: ${({ theme }) => theme.colors.blue[1]};
+
+  @media ${device.desktop} {
+    display: none;
+  }
+
+  @media print {
+    display: none;
+  }
+`
+
+export const Language = styled.div`
+  display: none;
+  // display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1;
+
+  button {
+  }
+`
 
 export const Container = styled.div`
-  display: grid;
   font-size: 14px;
-  grid-template-columns: 310px auto;
-  grid-template-rows: auto;
-  max-width: 1024px;
-  margin: 20px auto;
 
   a {
     color: #fff;
@@ -32,15 +57,28 @@ export const Container = styled.div`
     size: A4 portrait;
   }
 
+  @media ${device.tablet} {
+    display: grid;
+    grid-template-columns: 310px auto;
+    grid-template-rows: auto;
+    margin: 20px auto;
+    max-width: calc(100vw - 60px);
+  }
+  @media ${device.desktop} {
+    max-width: 1024px;
+  }
+
   @media print {
-    * {
-      font-size: 0.94em;
-    }
     background-color: ${({ theme }) => theme.colors.blue[0]};
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
+    display: grid;
     grid-template-columns: 250px auto;
+    grid-template-rows: auto;
     margin: 0;
+    * {
+      font-size: 0.94em;
+    }
   }
 `
 
@@ -50,11 +88,14 @@ export const Left = styled.div`
   background-color: ${({ theme }) => theme.colors.blue[0]};
   color: #fff;
   padding: 20px 25px;
-  border-bottom-left-radius: ${borderRadius};
-  border-top-left-radius: ${borderRadius};
 
   h3 {
     margin-top: 40px;
+  }
+
+  @media ${device.tablet} {
+    border-bottom-left-radius: ${borderRadius};
+    border-top-left-radius: ${borderRadius};
   }
 
   @media print {
@@ -80,8 +121,6 @@ export const Image = styled.img`
 export const Right = styled.div`
   background-color: #fff;
   padding: 20px 30px;
-  border-bottom-right-radius: ${borderRadius};
-  border-top-right-radius: ${borderRadius};
   position: relative;
 
   button {
@@ -92,6 +131,11 @@ export const Right = styled.div`
   h2 {
     color: ${({ theme }) => theme.colors.blue[1]};
     text-transform: uppercase;
+  }
+
+  @media ${device.tablet} {
+    border-bottom-right-radius: ${borderRadius};
+    border-top-right-radius: ${borderRadius};
   }
 
   @media print {
@@ -213,7 +257,7 @@ export const Experience = styled.div`
       }
     }
   }
-  b {
+  strong {
     font-weight: 600;
   }
 `

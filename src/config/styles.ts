@@ -150,4 +150,22 @@ export const Normalize = createGlobalStyle`
   [hidden] {
     display: none;
   }
+
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #b5b5b5;
+    &:hover {
+      background-color: #838383;
+    }
+  }
 `
