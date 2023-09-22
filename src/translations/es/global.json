@@ -1,0 +1,68 @@
+{
+  "web_developer": "Desarrollador web",
+  "personalInfo": "Información personal",
+  "firstName": "Nombre",
+  "lastName": "Apellido",
+  "age": "Edad",
+  "years": "años",
+  "nationality": "Nacionalidad",
+  "argentinian": "Argentino",
+  "birthday": "Fecha de nacimiento",
+  "status": "Estado civil",
+  "single": "Soltero",
+  "address": "Dirección",
+  "phone": "Teléfono",
+  "id": "DNI",
+  "email": "Correo electrónico",
+  "skills": "Habilidades",
+  "languages": "Idiomas",
+  "english": "Inglés \u2013 B2",
+  "spanish": "Español \u2013 Nativo",
+  "iac": "Curso de Diseño web de 1 año en el IAC.",
+  "utn": "Curso de NodeJS y MongoDB de 1 año en la UTN.",
+  "educationIt": "Curso de Android básico de 4 meses en Educación IT.",
+  "socials": "Sociales",
+  "profile": "Perfil",
+  "education": "Educación",
+  "experience": "Experiencia laboral",
+  "aboutMe": "Soy un apasionado desarrollador web especializado en <strong>React</strong> con una sólida experiencia en la creación de aplicaciones web de alto rendimiento y experiencias de usuario excepcionales. Mi enfoque se centra en la construcción de interfaces de usuario interactivas y receptivas que no solo cumplan con los estándares técnicos, sino que también proporcionen una experiencia inigualable para los usuarios finales.<br />Mi objetivo es seguir contribuyendo al éxito de proyectos desafiantes y llevar mi experiencia en <strong>React</strong> y <strong>Node</strong> al siguiente nivel.",
+  "jobs": [
+    {
+      "date": "2021 \u2013 Actual",
+      "position": "Ingeniero de software en <strong>Capicua</strong>",
+      "description": "Programador fullstack para distintos proyectos de USA, trabajando con las últimas tecnologías de desarrollo; diseño y arquitectura del proyecto. Test unitarios con Jest.<br /><strong>Lenguajes de desarrollo:</strong> React, Node.js y MongoDB con typescript. Trabajo con equipos internacionales.<br /><strong>Herramientas utilizadas:</strong> AWS, Hasura y Jira."
+    },
+    {
+      "date": "2019 \u2013 2021",
+      "position": "Ingeniero de software en <strong>Santander Tecnología</strong>",
+      "description": "Programador fullstack para distintos proyectos de intranet y back office del banco Santander, desarrollo de la UI bancaria en React con TDD, diseño y arquitectura del proyecto y creación de BFF con Nest.js. Test unitarios con Jest y test de integración con cypress.<br /><strong>Lenguajes de desarrollo:</strong> React, Node.js, Nest.js y MongoDB. Trabajo en equipos medianos y grandes."
+    },
+    {
+      "date": "2013 \u2013 2019",
+      "position": "Desarrollador Web fullstack en <strong>W3</strong>",
+      "description": "Programador en frontend y backend de sitios web tanto en web como en mobile, trabajando con MVC utilizando las tecnologías óptimas para cada tipo de proyecto. Se utilizó CMS Drupal y Wordpress, Framework Codeigniter y se realizó configuraciones de servidor en Windows XP2003.<br /><strong>Lenguajes de desarrollo:</strong> PHP, Codeigniter, Laravel, MySQL, MariaDB, GraphQL, MongoDB, Backbone.js, Angular.js, Node.js, React.js, ReactNative, Boostrap, CSS3 y HTML5.<br /><strong>Herramientas utilizadas:</strong> AWS, Azure, Jenkins, Jira y Bitbucket."
+    },
+    {
+      "date": "2012 \u2013 2013",
+      "position": "Desarrollador Web en <strong>Gameloft</strong>",
+      "description": "Programador en frontend y backend de sitios web y aplicaciones de facebook tanto en web como en mobile, trabajando con MVC utilizando las tecnologías óptimas para cada tipo de proyecto. Se utilizó e investigó APIs como la de Instagram, Twitter, Facebook y Vine.<br /><strong>Lenguajes de desarrollo:</strong> PHP, SQL, jQuery, CSS3, HTML5 y SASS."
+    },
+    {
+      "date": "2011",
+      "position": "Desarrollador Web en <strong>Kazuu</strong>",
+      "description": "Programador en frontend y backend de páginas web (Kazuu), trabajando con MVC con CodeIgniter y Framework propio de Kazuu. Se utilizaron tecnologías nuevas e investigaciones en nuevas áreas."
+    }
+  ],
+  "educations": [
+    {
+      "date": "2011 \u2013 2012 (Abandonado)",
+      "title": "Ciencias de la Computación",
+      "from": "Universidad de Buenos Aires"
+    },
+    {
+      "date": "2010 (Finalizado)",
+      "title": "Técnico en Computación",
+      "from": "Escuela Técnica N° 24 \u2013 Defensa de Buenos Aires"
+    }
+  ]
+}
