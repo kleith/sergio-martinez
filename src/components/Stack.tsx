@@ -23,10 +23,10 @@ type DescriptionProps = {
 
 export const Description: React.FC<DescriptionProps> = ({ title, subtitle, children }) => {
   return (
-    <>
+    <section>
       <h4 dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(title) }} />
       <p dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(subtitle) }} />
       <p dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(children) }} />
-    </>
+    </section>
   )
 }

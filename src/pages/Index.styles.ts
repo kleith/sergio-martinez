@@ -22,13 +22,18 @@ export const Scroller = styled.div`
 `
 
 export const Language = styled.div`
-  display: none;
-  // display: flex;
+  display: flex;
   flex-direction: column;
   position: fixed;
   z-index: 1;
 
   button {
+    background-color: ${({ theme }) => theme.colors.main[1]};
+    border: 0;
+    color: ${({ theme }) => theme.colors.secondary[1]};
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 4px;
   }
 `
 
@@ -76,6 +81,7 @@ export const Container = styled.div`
     grid-template-columns: 250px auto;
     grid-template-rows: auto;
     margin: 0;
+    max-width: initial;
     * {
       font-size: 0.94em;
     }
@@ -88,10 +94,6 @@ export const Left = styled.div`
   background-color: ${({ theme }) => theme.colors.blue[0]};
   color: #fff;
   padding: 20px 25px;
-
-  h3 {
-    margin-top: 40px;
-  }
 
   @media ${device.tablet} {
     border-bottom-left-radius: ${borderRadius};
@@ -216,33 +218,6 @@ export const Socials = styled.ul`
       content: attr(aria-label);
       text-decoration: underline;
     }
-  }
-`
-
-export const ChipContainer = styled.div`
-  margin: 0 -5px;
-`
-
-export const Chip = styled.div`
-  background-color: ${({ theme }) => theme.colors.blue[3]};
-  border-radius: 10px;
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 700;
-  margin: 5px;
-  padding: 5px 10px;
-
-  color: ${({ theme }) => theme.colors.main[0]};
-  box-shadow: ${({ theme }) => shadow(3, theme.colors.blue[2] as `#${string}`)};
-
-  @media print {
-    color: ${({ theme }) => theme.colors.secondary[0]};
-    background-color: transparent;
-    box-shadow: none;
-    border: 1px dashed ${({ theme }) => theme.colors.blue[1]};
-    font-size: 0.8em;
-    margin: 3px;
-    padding: 4px 6px;
   }
 `
 

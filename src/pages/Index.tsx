@@ -17,8 +17,6 @@ import {
 
 import {
   ButtonControl,
-  Chip,
-  ChipContainer,
   Container,
   Divider,
   Experience,
@@ -36,23 +34,26 @@ import {
 import photoProfile from "../assets/sergio_martinez.jpg"
 import { Description, Stack } from "../components/Stack"
 import { Button } from "../components/ui/Button/Button"
+import { Chip, ChipContainer } from "../components/ui/Chip/Chip"
+import { useDocumentTitle } from "../hooks/useDocumentTitle"
+import { Title } from "./components/Title"
 
 const skills = [
-  "Node",
-  "React",
-  "Typescript",
-  "Angular.js",
-  "Express",
-  "Nest.js",
-  "Jest",
-  "Cypress",
-  "MySQL",
-  "PostgreSQL",
-  "MongoDB",
-  "PHP",
-  "Git",
-  "CSS3",
-  "HTML5",
+  { name: "Node", years: 5 },
+  { name: "React", years: 5 },
+  { name: "Typescript", years: 2 },
+  { name: "AngularJS", years: 2 },
+  { name: "Express", years: 3 },
+  { name: "NestJS", years: 2 },
+  { name: "Jest", years: 2 },
+  { name: "Cypress", years: 1 },
+  { name: "MySQL", years: 5 },
+  { name: "PostgreSQL", years: 2 },
+  { name: "MongoDB", years: 2 },
+  { name: "PHP", years: 4 },
+  // { name: "Git", years: 6 },
+  // { name: "CSS3", years: 9 },
+  // { name: "HTML5", years: 9 },
 ]
 
 const birthday = "1989-10-29"
@@ -62,6 +63,9 @@ const years = today.diff(birthday, "years")
 export const Index = () => {
   const { t, i18n } = useTranslation()
   const [scrollWidth, setScrollWidth] = useState<number>(0)
+  useDocumentTitle(
+    i18n.language === "es" ? "Sergio Martínez - Curriculum Vitae" : "Sergio Martínez - Resume",
+  )
 
   moment.locale(i18n.language)
 
@@ -107,7 +111,7 @@ export const Index = () => {
           <Divider />
 
           <Information>
-            <h3>{t("personalInfo")}</h3>
+            <Title>{t("personalInfo")}</Title>
             <ul>
               <li>{t("lastName")}: Martínez Tala</li>
               <li>{t("firstName")}: Sergio</li>
@@ -150,24 +154,26 @@ export const Index = () => {
                 <a href='mailto:sergiomartinezt.89@gmail.com'>sergiomartinezt.89@gmail.com</a>
               </li>
             </ul>
-            <h3>{t("skills")}</h3>
+            <Title subtitle={t("yearsExperience")}>{t("skills")}</Title>
             <ChipContainer>
               {skills.map((skill, index) => (
-                <Chip key={index}>{skill}</Chip>
+                <Chip key={index} number={skill.years}>
+                  {skill.name}
+                </Chip>
               ))}
             </ChipContainer>
-            <h3>{t("languages")}</h3>
+            <Title>{t("languages")}</Title>
             <ul>
               <li>{t("english")}</li>
               <li>{t("spanish")}</li>
             </ul>
-            <h3>Extracurricular</h3>
+            <Title>Extracurricular</Title>
             <ul>
               <li dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(t("iac")) }} />
               <li dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(t("utn")) }} />
               <li dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(t("educationIt")) }} />
             </ul>
-            <h3>{t("socials")}</h3>
+            <Title>{t("socials")}</Title>
             <Socials>
               <li>
                 <a
