@@ -177,7 +177,7 @@ export const Divider = styled.hr`
 export const Information = styled.div`
   & ul {
     list-style: none;
-    maring: 0;
+    margin: 0;
     padding: 0;
   }
   & ul li {
