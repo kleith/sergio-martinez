@@ -1,3 +1,5 @@
+import { css } from "styled-components"
+
 /**
  * Create custom borders
  * @param color Hexadecimal color
@@ -12,14 +14,16 @@ export const border = (
   color: `#${string}`,
   lineCap: "butt" | "round" | "square",
   borderRadius: number,
-  stroke: number,
-  dashArray: number[],
+  stroke: number = 1,
+  dashArray: number[] = [0, 1],
   dashOffset: number = 0,
 ) => {
-  return `background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='${borderRadius}' ry='${borderRadius}' stroke='${encodeURIComponent(
-    color,
-  )}' stroke-width='${stroke}' stroke-dasharray='${dashArray}' stroke-dashoffset='${dashOffset}' stroke-linecap='${lineCap}'/%3e%3c/svg%3e");
-  border-radius: ${borderRadius}px;`
+  const encondeColor = encodeURIComponent(color)
+
+  return css`
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='${borderRadius}' ry='${borderRadius}' stroke='${encondeColor}' stroke-width='${stroke}' stroke-dasharray='${dashArray}' stroke-dashoffset='${dashOffset}' stroke-linecap='${lineCap}'/%3e%3c/svg%3e");
+    border-radius: ${borderRadius}px;
+  `
 }
 
 /**
@@ -28,7 +32,7 @@ export const border = (
  * @param color Hexadecimal color
  * @returns
  */
-export const shadow = (thick: number, color: `#${string}`) => {
+export const shadow = (thick: number, color: string) => {
   const shadow = []
 
   for (let i = 1; i <= thick; i++) {
@@ -37,3 +41,22 @@ export const shadow = (thick: number, color: `#${string}`) => {
 
   return shadow.join(", ")
 }
+
+export const scrollbar = css`
+  &::-webkit-scrollbar {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: var(--gray-25);
+    border-radius: 0.5rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--gray-200);
+    border-radius: 0.5rem;
+
+    &:hover {
+      background-color: var(--gray-300);
+    }
+  }
+`

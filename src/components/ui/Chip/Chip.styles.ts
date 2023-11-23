@@ -2,44 +2,45 @@ import styled from "styled-components"
 
 import { shadow } from "../../../utils/css"
 
-export const ChipContainer = styled.div`
+export const Chips = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -5px;
+  gap: 0.5rem;
 `
 
-export const Chip = styled.div`
-  background-color: ${({ theme }) => theme.colors.blue[3]};
-  border-radius: 10px;
-  box-shadow: ${({ theme }) => shadow(3, theme.colors.blue[2] as `#${string}`)};
-  color: ${({ theme }) => theme.colors.main[0]};
-  font-size: 0.8rem;
-  font-weight: 700;
-  margin: 5px;
-  padding-right: 8px;
+export const ChipContainer = styled.div`
+  --padding: 0.5rem;
+  --border-radius: 0.6rem;
 
-  span {
-    background-color: ${({ theme }) => theme.colors.blue[1]};
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    color: ${({ theme }) => theme.colors.secondary[1]};
-    display: inline-block;
-    margin-right: 5px;
-    padding: 5px 8px;
-  }
+  background-color: var(--blue-300);
+  border-radius: 0.6rem;
+  box-shadow: ${shadow(3, "var(--blue-600)" as `#${string}`)};
+  color: var(--gray-800);
+  display: inline-flex;
+  font-size: var(--font-sm);
+  font-weight: var(--text-bold);
+  line-height: var(--line-md);
+  overflow: hidden;
 
   @media print {
-    color: ${({ theme }) => theme.colors.secondary[0]};
+    --padding: 0.3rem;
+
+    color: var(--blue-25);
     background-color: transparent;
     box-shadow: none;
-    border: 1px dashed ${({ theme }) => theme.colors.blue[1]};
+    border: 1px dashed var(--blue-500);
+    font-size: 0.55rem;
     font-size: 0.8em;
-    margin: 3px;
-    padding-right: 6px;
-
-    span {
-      padding: 4px 6px;
-      margin-right: 4px;
-    }
+    font-weight: var(--text-medium);
+    line-height: var(--line-xs);
   }
+`
+
+export const ChipNumber = styled.div`
+  background-color: var(--blue-500);
+  color: var(--blue-25);
+  padding: 0 var(--padding);
+`
+export const ChipText = styled.span`
+  padding: 0 var(--padding);
 `

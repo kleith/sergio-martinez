@@ -1,4 +1,4 @@
-import { Chip as ChipStyles, ChipContainer } from "./Chip.styles"
+import { Chips, ChipContainer, ChipNumber, ChipText } from "./Chip.styles"
 
 type ChipProps = {
   number: number
@@ -7,11 +7,11 @@ type ChipProps = {
 
 export const Chip: React.FC<ChipProps> = ({ number, children }) => {
   return (
-    <ChipStyles>
-      <span>{number}</span>
-      {children}
-    </ChipStyles>
+    <ChipContainer>
+      <ChipNumber>{number}</ChipNumber>
+      <ChipText>{children}</ChipText>
+    </ChipContainer>
   )
 }
 
-export { ChipContainer }
+export { Chips }

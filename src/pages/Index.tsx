@@ -33,8 +33,8 @@ import {
 } from "./Index.styles"
 import photoProfile from "../assets/sergio_martinez.jpg"
 import { Description, Stack } from "../components/Stack"
-import { Button } from "../components/ui/Button/Button"
-import { Chip, ChipContainer } from "../components/ui/Chip/Chip"
+import { Button } from "../components/ui/Button"
+import { Chip, Chips } from "../components/ui/Chip"
 import { useDocumentTitle } from "../hooks/useDocumentTitle"
 import { Title } from "./components/Title"
 
@@ -155,13 +155,13 @@ export const Index = () => {
               </li>
             </ul>
             <Title subtitle={t("yearsExperience")}>{t("skills")}</Title>
-            <ChipContainer>
+            <Chips>
               {skills.map((skill, index) => (
                 <Chip key={index} number={skill.years}>
                   {skill.name}
                 </Chip>
               ))}
-            </ChipContainer>
+            </Chips>
             <Title>{t("languages")}</Title>
             <ul>
               <li>{t("english")}</li>

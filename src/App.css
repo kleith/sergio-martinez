@@ -1,0 +1,151 @@
+:root {
+  /* Colors */
+  --base-white: #fff;
+  --base-black: #000;
+
+  /* Gray true */
+  --gray-25: #fcfcfc;
+  --gray-50: #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #d6d6d6;
+  --gray-400: #a3a3a3;
+  --gray-500: #737373;
+  --gray-600: #525252;
+  --gray-700: #424242;
+  --gray-800: #292929;
+  --gray-900: #141414;
+
+  /* Violet */
+  --violet-25: #fbfaff;
+  --violet-50: #f5f3ff;
+  --violet-100: #ece9fe;
+  --violet-200: #ddd6fe;
+  --violet-300: #c3b5fd;
+  --violet-400: #a48afb;
+  --violet-500: #875bf7;
+  --violet-600: #7839ee;
+  --violet-700: #6927da;
+  --violet-800: #5720b7;
+  --violet-900: #491c96;
+
+  /* Blue light */
+  --blue-25: #f5fbff;
+  --blue-50: #f0f9ff;
+  --blue-100: #e0f2fe;
+  --blue-200: #b9e6fe;
+  --blue-300: #7cd4fd;
+  --blue-400: #36bffa;
+  --blue-500: #0ba5ec;
+  --blue-600: #0086c9;
+  --blue-700: #026aa2;
+  --blue-800: #065986;
+  --blue-900: #0b4a6f;
+
+  /* Green light */
+  --green-25: #fafef5;
+  --green-50: #f3fee7;
+  --green-100: #e3fbcc;
+  --green-200: #d0f8ab;
+  --green-300: #a6ef67;
+  --green-400: #85e13a;
+  --green-500: #66c61c;
+  --green-600: #4ca30d;
+  --green-700: #3b7c0f;
+  --green-800: #326212;
+  --green-900: #2b5314;
+
+  /* Orange dark */
+  --orange-25: #fff9f5;
+  --orange-50: #fff4ed;
+  --orange-100: #ffe6d5;
+  --orange-200: #ffd6ae;
+  --orange-300: #ff9c66;
+  --orange-400: #ff692e;
+  --orange-500: #ff4405;
+  --orange-600: #e62e05;
+  --orange-700: #bc1b06;
+  --orange-800: #97180c;
+  --orange-900: #771a0d;
+
+  /* Yellow */
+  --yellow-25: #fefdf0;
+  --yellow-50: #fefbe8;
+  --yellow-100: #fef7c3;
+  --yellow-200: #feee95;
+  --yellow-300: #fde272;
+  --yellow-400: #fac515;
+  --yellow-500: #eaaa08;
+  --yellow-600: #ca8504;
+  --yellow-700: #a15c07;
+  --yellow-800: #854a0e;
+  --yellow-900: #713b12;
+
+  /* Sizes */
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 0.75rem;
+  --size-4: 1rem;
+  --size-5: 1.25rem;
+  --size-6: 1.5rem;
+  --size-8: 2rem;
+  --size-10: 2.5rem;
+  --size-12: 3rem;
+  --size-16: 4rem;
+  --size-20: 5rem;
+  --size-24: 6rem;
+  --size-32: 8rem;
+  --size-40: 10rem;
+  --size-48: 12rem;
+  --size-56: 14rem;
+  --size-64: 16rem;
+
+  /* Containers */
+  --container-sm: 40rem;
+  --container-md: 48rem;
+  --container-lg: 64rem;
+  --container-xl: 80rem;
+
+  /* Shadows */
+  --shadow-sm: 0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+  --shadow-md: 0px 4px 8px -2px rgba(16, 24, 40, 0.1);
+  --shadow-lg: 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+  --shadow-xl: 0px 20px 24px -4px rgba(16, 24, 40, 0.08);
+  --shadow-2xl: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+  --shadow-3xl: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+
+  /* Font weight */
+  --text-regular: 400;
+  --text-medium: 500;
+  --text-semibold: 600;
+  --text-bold: 700;
+
+  /* Font sizes */
+  --font-xs: 0.75rem;
+  --line-xs: 1.125rem;
+  --font-sm: 0.875rem;
+  --line-sm: 1.25rem;
+  --font-md: 1rem;
+  --line-md: 1.5rem;
+  --font-lg: 1.125rem;
+  --line-lg: 1.75rem;
+  --font-xl: 1.25rem;
+  --line-xl: 1.875rem;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--gray-25);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: var(--gray-300);
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--gray-500);
+}

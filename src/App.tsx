@@ -5,6 +5,9 @@ import i18n from "./config/i18n"
 import { Normalize } from "./config/styles"
 import { defaultTheme } from "./config/theme"
 import { Index } from "./pages/Index"
+// import { Qr } from "./pages/Qr"
+import "./App.css"
+import { Container } from "./App.styles"
 
 const App = () => {
   return (
@@ -12,8 +15,11 @@ const App = () => {
       <ThemeProvider theme={defaultTheme}>
         <I18nextProvider i18n={i18n}>
           <Normalize />
-          {/* Pages */}
-          <Index />
+          <Container>
+            {/* Pages */}
+            <Index />
+            {/* <Qr /> */}
+          </Container>
         </I18nextProvider>
       </ThemeProvider>
     </>

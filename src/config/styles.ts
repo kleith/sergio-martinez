@@ -6,10 +6,8 @@ export const Normalize = createGlobalStyle`
     -webkit-text-size-adjust: 100%;
   }
   body {
-    background-color: #e9edf2;
-    color: ${({ theme }) => theme.colors.main[0]};
+    font-size: 16px;
     margin: 0;
-    font-family: ${({ theme }) => theme.font.spline};
   }
   main {
     display: block;
@@ -86,7 +84,7 @@ export const Normalize = createGlobalStyle`
   [type="button"],
   [type="reset"],
   [type="submit"] {
-    -webkit-appearance: button;
+    appearance: button;
   }
   button::-moz-focus-inner,
   [type="button"]::-moz-focus-inner,
@@ -128,14 +126,14 @@ export const Normalize = createGlobalStyle`
     height: auto;
   }
   [type="search"] {
-    -webkit-appearance: textfield;
+    appearance: textfield;
     outline-offset: -2px;
   }
   [type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
+    appearance: none;
   }
   ::-webkit-file-upload-button {
-    -webkit-appearance: button;
+    appearance: button;
     font: inherit;
   }
   details {
@@ -149,23 +147,5 @@ export const Normalize = createGlobalStyle`
   }
   [hidden] {
     display: none;
-  }
-
-  /* Scrollbar Styling */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: #ebebeb;
-    border-radius: 4px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: #b5b5b5;
-    &:hover {
-      background-color: #838383;
-    }
   }
 `

@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+import Typography from "../../components/ui/Typography"
+
 type TitleProps = {
   children: string
   subtitle?: string
@@ -8,19 +10,20 @@ type TitleProps = {
 export const Title: React.FC<TitleProps> = ({ children, subtitle }) => {
   return (
     <>
-      <H3 hasSubtitle={!!subtitle}>{children}</H3>
-      {subtitle && <Sub>{subtitle}</Sub>}
+      <Header $hasSubtitle={Boolean(subtitle)}>{children}</Header>
+      {subtitle && <SubHeader>{subtitle}</SubHeader>}
     </>
   )
 }
 
-const H3 = styled.h3<{ hasSubtitle: boolean }>`
+const Header = styled(Typography).attrs({ size: "md", weight: "bold", as: "h3" })<{
+  $hasSubtitle: boolean
+}>`
   margin-top: 40px;
-  margin-bottom: ${({ hasSubtitle }) => (hasSubtitle ? "0" : "1em")};
+  margin-bottom: ${({ $hasSubtitle }) => ($hasSubtitle ? "0" : "1rem")};
 `
 
-const Sub = styled.p`
+const SubHeader = styled(Typography).attrs({ size: "xs" })`
   margin: 0 0 1rem 0;
-  font-size: 0.8em;
   color: ${({ theme }) => theme.colors.blue[3]};
 `
