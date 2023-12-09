@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { shadow } from "../../../utils/css"
+import { shadow } from "@utils/css"
 
 export const Chips = styled.div`
   display: flex;
@@ -29,10 +29,9 @@ export const ChipContainer = styled.div`
     background-color: transparent;
     box-shadow: none;
     border: 1px dashed var(--blue-500);
-    font-size: 0.55rem;
-    font-size: 0.8em;
+    font-size: var(--font-xs);
     font-weight: var(--text-medium);
-    line-height: var(--line-xs);
+    line-height: var(--line-sm);
   }
 `
 

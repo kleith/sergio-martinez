@@ -1,4 +1,5 @@
 {
+  "sergio_martinez": "Sergio Martínez - Curriculum Vitae",
   "web_developer": "Desarrollador web",
   "personalInfo": "Información personal",
   "firstName": "Nombre",
@@ -47,11 +48,6 @@
       "date": "2012 \u2013 2013",
       "position": "Desarrollador Web en <strong>Gameloft</strong>",
       "description": "Programador en frontend y backend de sitios web y aplicaciones de facebook tanto en web como en mobile, trabajando con MVC utilizando las tecnologías óptimas para cada tipo de proyecto. Se utilizó e investigó APIs como la de Instagram, Twitter, Facebook y Vine.<br /><strong>Lenguajes de desarrollo:</strong> PHP, SQL, jQuery, CSS3, HTML5 y SASS."
-    },
-    {
-      "date": "2011",
-      "position": "Desarrollador Web en <strong>Kazuu</strong>",
-      "description": "Programador en frontend y backend de páginas web (Kazuu), trabajando con MVC con CodeIgniter y Framework propio de Kazuu. Se utilizaron tecnologías nuevas e investigaciones en nuevas áreas."
     }
   ],
   "educations": [

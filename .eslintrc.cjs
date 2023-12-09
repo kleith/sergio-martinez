@@ -1,60 +1,41 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "settings": {
-        "react": {
-            "version": "detect"
-        }
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:react/recommended",
-        "plugin:react/jsx-runtime",
-        "eslint-config-prettier",
-        "plugin:import/recommended",
-        "plugin:import/typescript"
+  root: true,
+  env: { browser: true, es2021: true },
+  extends: [
+    "eslint:recommended",
+    "eslint-config-prettier",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:import/typescript",
+  ],
+  ignorePatterns: ["dist", ".eslintrc.cjs"],
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint", "react", "import"],
+  rules: {
+    "react/prop-types": "off",
+    "import/no-named-as-default": "off",
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        groups: [
+          ["builtin", "external"],
+          ["internal"],
+          ["sibling", "parent", "index"],
+          "object",
+          // Then the rest: internal and external type
+        ],
+      },
     ],
-    "overrides": [
-        {
-            "env": {
-                "node": true
-            },
-            "files": [
-                ".eslintrc.{js,cjs}"
-            ],
-            "parserOptions": {
-                "sourceType": "script"
-            }
-        }
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+  },
+  settings: {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"],
     },
-    "plugins": [
-        "@typescript-eslint",
-        "react",
-        "import"
-    ],
-    "rules": {
-        "react/prop-types": "off",
-        "import/no-named-as-default": "off",
-        "import/order": [
-            "error",
-            {
-                "newlines-between": "always",
-                "groups": [
-                    ["builtin", "external"],
-                    ["internal"],
-                    ["sibling", "parent", "index"],
-                    "object",
-                    // Then the rest: internal and external type
-                ]
-            }
-          ]
-    }
+    "import/resolver": {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
+  },
 }

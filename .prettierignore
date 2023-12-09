@@ -1,9 +1,12 @@
-node_modules
-dist
+**/.git
+**/.svn
+**/.hg
+**/node_modules
 
 # Ignore artifacts:
 build
 coverage
+dist
 
-.eslintrc.cjs
-.package-lock.json
+# Ignore all HTML files:
+**/*.html

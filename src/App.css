@@ -131,6 +131,18 @@
   --line-lg: 1.75rem;
   --font-xl: 1.25rem;
   --line-xl: 1.875rem;
+
+  /* Devices */
+  --device-sm: 40rem;
+  --device-md: 48rem;
+  --device-lg: 64rem;
+  --device-xl: 80rem;
+
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--blue-50);
 }
 
 body::-webkit-scrollbar {

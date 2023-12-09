@@ -4,10 +4,11 @@ import { ThemeProvider } from "styled-components"
 import i18n from "./config/i18n"
 import { Normalize } from "./config/styles"
 import { defaultTheme } from "./config/theme"
-import { Index } from "./pages/Index"
+// import { Index } from "./pages/Index"
 // import { Qr } from "./pages/Qr"
-import "./App.css"
 import { Container } from "./App.styles"
+import { CurriculumVitae } from "./pages/CurriculumVitae"
+import "./App.css"
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
           <Normalize />
           <Container>
             {/* Pages */}
-            <Index />
+            <CurriculumVitae />
             {/* <Qr /> */}
           </Container>
         </I18nextProvider>
