@@ -1,5 +1,5 @@
 @media print {
   :root {
-    font-size: 14px;
+    font-size: 13.5px !important;
   }
 }

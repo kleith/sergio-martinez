@@ -138,10 +138,8 @@
   --device-lg: 64rem;
   --device-xl: 80rem;
 
+  /* default values */
   font-size: 16px;
-}
-
-body {
   background-color: var(--blue-50);
 }
 

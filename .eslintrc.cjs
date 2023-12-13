@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  env: { browser: true, es2021: true },
+  env: { browser: true, es2020: true },
   extends: [
     "eslint:recommended",
     "eslint-config-prettier",
@@ -10,8 +10,9 @@ module.exports = {
   ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint", "react", "import"],
+  plugins: ["react-refresh", "@typescript-eslint", "react", "import"],
   rules: {
+    "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
     "react/prop-types": "off",
     "import/no-named-as-default": "off",
     "import/order": [

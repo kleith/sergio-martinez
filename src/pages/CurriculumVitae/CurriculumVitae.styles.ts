@@ -69,5 +69,6 @@ export const Detail = styled.div`
 export const Content = styled.div`
   background-color: var(--base-white);
   grid-area: content;
+  min-height: 100vh;
   padding: 1rem 1.5rem;
 `

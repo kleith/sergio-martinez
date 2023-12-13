@@ -24,5 +24,5 @@ const Header = styled(Typography).attrs({ size: "md", weight: "bold", as: "h3" }
 `
 const SubHeader = styled(Typography).attrs({ size: "xs" })`
   margin-top: 0;
-  color: ${({ theme }) => theme.colors.blue[3]};
+  color: var(--blue-300);
 `
