@@ -13,6 +13,7 @@ import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { Chip, Chips } from "@components/ui/Chip"
+import { Tooltip } from "@components/ui/Tooltip"
 
 import { birthday, skills, years } from "./Information.constants"
 import { List, ListItem, ListLink, SocialItem, SocialsList } from "./Information.styles"
@@ -90,26 +91,30 @@ export const Information = () => {
       <Title>{t("socials")}</Title>
       <SocialsList>
         <SocialItem>
-          <ListLink
-            href='https://github.com/kleith'
-            aria-label='github.com/kleith'
-            target='_blank'
-            rel='noreferrer'
-            title='Github'
-          >
-            <FontAwesomeIcon icon={faSquareGithub} />
-          </ListLink>
+          <Tooltip title='Github website' position='left'>
+            <ListLink
+              href='https://github.com/kleith'
+              aria-label='github.com/kleith'
+              target='_blank'
+              rel='noreferrer'
+              title='Github'
+            >
+              <FontAwesomeIcon icon={faSquareGithub} />
+            </ListLink>
+          </Tooltip>
         </SocialItem>
         <SocialItem>
-          <ListLink
-            href='https://www.linkedin.com/in/sergio-martinezt/'
-            aria-label='linkedin.com/in/sergio-martinezt'
-            target='_blank'
-            rel='noreferrer'
-            title='LinkedIn'
-          >
-            <FontAwesomeIcon icon={faLinkedin} />
-          </ListLink>
+          <Tooltip title='LinkedIn website'>
+            <ListLink
+              href='https://www.linkedin.com/in/sergio-martinezt/'
+              aria-label='linkedin.com/in/sergio-martinezt'
+              target='_blank'
+              rel='noreferrer'
+              title='LinkedIn'
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </ListLink>
+          </Tooltip>
         </SocialItem>
       </SocialsList>
     </>

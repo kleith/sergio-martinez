@@ -1,7 +1,6 @@
 import DOMPurify from "dompurify"
 import { useTranslation } from "react-i18next"
 
-// import { Timeline } from "@components/ui/Timeline"
 import { Job } from "@assets/Job"
 import { Academic } from "@assets/Academic"
 

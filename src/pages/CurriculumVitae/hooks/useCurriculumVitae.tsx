@@ -1,6 +1,7 @@
 import { useLayoutEffect, useState } from "react"
 import { useTranslation } from "react-i18next"
 import moment from "moment"
+
 import { size } from "@config/devices"
 
 export const useCurriculumVitae = () => {

@@ -1,4 +1,5 @@
 import { styled } from "styled-components"
+
 import { device, size } from "@config/devices"
 
 export const Scroller = styled.div`
@@ -33,41 +34,42 @@ export const Container = styled.div`
   }
 `
 export const ContentGrid = styled.div`
+  --_border-radius: 0rem;
   display: grid;
   width: 100%;
   grid-template-areas: "header" "content" "details";
 
   @media ${device.tablet} {
-    border-radius: 1rem;
+    --_border-radius: 1rem;
     grid-template: auto 1fr / 310px 1fr;
     grid-template-areas: "header content" "details content";
-    overflow: hidden;
-  }
-
-  @media ${device.tablet} {
     max-width: ${size.lg};
   }
 
   @media print {
-    border-radius: 0;
+    --_border-radius: 0rem;
     grid-template-columns: 250px 1fr;
     max-width: 100%;
   }
 `
 export const Header = styled.div`
   background-color: var(--gray-700);
+  border-top-left-radius: var(--_border-radius);
   color: var(--gray-50);
   grid-area: header;
   padding: 1rem 1.5rem 0 1.5rem;
 `
 export const Detail = styled.div`
   background-color: var(--gray-700);
+  border-bottom-left-radius: var(--_border-radius);
   color: var(--gray-50);
   grid-area: details;
   padding: 0 1.5rem 1rem 1.5rem;
 `
 export const Content = styled.div`
   background-color: var(--base-white);
+  border-top-right-radius: var(--_border-radius);
+  border-bottom-right-radius: var(--_border-radius);
   grid-area: content;
   min-height: 100vh;
   padding: 1rem 1.5rem;

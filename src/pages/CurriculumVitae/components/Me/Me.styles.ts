@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { device } from "@config/devices"
 
+import { device } from "@config/devices"
 import { shadow } from "@utils/css"
 import Typography from "@components/ui/Typography"
 import Heading from "@components/ui/Heading"

@@ -4,8 +4,6 @@ import { ThemeProvider } from "styled-components"
 import i18n from "./config/i18n"
 import { Normalize } from "./config/styles"
 import { defaultTheme } from "./config/theme"
-// import { Index } from "./pages/Index"
-// import { Qr } from "./pages/Qr"
 import { Container } from "./App.styles"
 import { CurriculumVitae } from "./pages/CurriculumVitae"
 import "./App.css"
@@ -19,7 +17,6 @@ const App = () => {
           <Container>
             {/* Pages */}
             <CurriculumVitae />
-            {/* <Qr /> */}
           </Container>
         </I18nextProvider>
       </ThemeProvider>

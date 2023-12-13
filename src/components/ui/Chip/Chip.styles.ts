@@ -17,7 +17,7 @@ export const ChipContainer = styled.div`
   box-shadow: ${shadow(3, "var(--blue-600)" as `#${string}`)};
   color: var(--gray-800);
   display: inline-flex;
-  font-size: var(--font-sm);
+  font-size: var(--font-xs);
   font-weight: var(--text-bold);
   line-height: var(--line-md);
   overflow: hidden;
