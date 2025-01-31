@@ -22,6 +22,7 @@ const Header = styled(Typography).attrs({ size: "md", weight: "bold", as: "h3" }
   margin-top: 2rem;
   ${({ $hasSubtitle }) => $hasSubtitle && "margin-bottom: 0;"}
 `
+
 const SubHeader = styled(Typography).attrs({ size: "xs" })`
   margin-top: 0;
   color: var(--blue-300);

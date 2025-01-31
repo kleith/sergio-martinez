@@ -30,7 +30,12 @@
   "aboutMe": "I'm a passionate <strong>React</strong> web developer with solid experience building high-performance web applications and exceptional user experiences. My focus is on building interactive and responsive user interfaces that not only meet technical standards but also provide an unmatched experience for end users.<br />My goal is to continue contributing to the success of challenging projects and take my experience in <strong>React</strong> and <strong>Node</strong> to the next level.",
   "jobs": [
     {
-      "date": "2021 \u2013 Current",
+      "date": "2023 \u2013 Current",
+      "position": "Software engineering in <strong>Ueno</strong>",
+      "description": "Frontend developer for a Paraguayan bank, creating the new home banking system with micro frontends and BFF. UI development with a Material UI theme.<br /><strong>Development languages:</strong> NextJs and Fastify with TypeScript.<br /><strong>Tools used:</strong> Jira and Null."
+    },
+    {
+      "date": "2021 \u2013 2023",
       "position": "Software engineering in <strong>Capicua</strong>",
       "description": "Fullstack programmer for different projects in the USA, working with the latest development technologies; project design and architecture. Unit testing with Jest.<br /><strong>Development languages:</strong> React, Node.js and MongoDB with typescript. I work with international teams.<br /><strong>Tools used:</strong> AWS, Hasura and Jira."
     },

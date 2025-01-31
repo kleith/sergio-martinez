@@ -53,14 +53,14 @@ export const ContentGrid = styled.div`
   }
 `
 export const Header = styled.div`
-  background-color: var(--gray-700);
+  background-color: #323b4c;
   border-top-left-radius: var(--_border-radius);
   color: var(--gray-50);
   grid-area: header;
   padding: 1rem 1.5rem 0 1.5rem;
 `
 export const Detail = styled.div`
-  background-color: var(--gray-700);
+  background-color: #323b4c;
   border-bottom-left-radius: var(--_border-radius);
   color: var(--gray-50);
   grid-area: details;

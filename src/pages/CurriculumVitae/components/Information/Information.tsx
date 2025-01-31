@@ -46,11 +46,11 @@ export const Information = () => {
         <ListItem>
           <FontAwesomeIcon icon={faLocationDot} title={t("address")} />
           <ListLink
-            href='https://maps.app.goo.gl/xX6ML4kJC5hi6erp9'
+            href='https://maps.app.goo.gl/CEqVYNKrwdMi3obn8'
             target='_blank'
             rel='noreferrer'
           >
-            Delambre 4565 1A &#x2013; CABA
+            Villa Adelina &#x2013; San Isidro
           </ListLink>
         </ListItem>
         <ListItem>

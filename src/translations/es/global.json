@@ -30,9 +30,14 @@
   "aboutMe": "Soy un apasionado desarrollador web especializado en <strong>React</strong> con una sólida experiencia en la creación de aplicaciones web de alto rendimiento y experiencias de usuario excepcionales. Mi enfoque se centra en la construcción de interfaces de usuario interactivas y receptivas que no solo cumplan con los estándares técnicos, sino que también proporcionen una experiencia inigualable para los usuarios finales.<br />Mi objetivo es seguir contribuyendo al éxito de proyectos desafiantes y llevar mi experiencia en <strong>React</strong> y <strong>Node</strong> al siguiente nivel.",
   "jobs": [
     {
-      "date": "2021 \u2013 Actual",
+      "date": "2023 \u2013 Actual",
+      "position": "Ingeniero de software en <strong>Ueno</strong>",
+      "description": "Programador front para banco paraguayo, realizando el nuevo home banking del banco con micro frontends y BFF. Desarrollo de la UI con un theme de Material UI.<br /><strong>Lenguajes de desarrollo:</strong> NextJs y Fastify con typescript.<br /><strong>Herramientas utilizadas:</strong> Jira y Null."
+    },
+    {
+      "date": "2021 \u2013 2023",
       "position": "Ingeniero de software en <strong>Capicua</strong>",
-      "description": "Programador fullstack para distintos proyectos de USA, trabajando con las últimas tecnologías de desarrollo; diseño y arquitectura del proyecto. Test unitarios con Jest.<br /><strong>Lenguajes de desarrollo:</strong> React, Node.js y MongoDB con typescript. Trabajo con equipos internacionales.<br /><strong>Herramientas utilizadas:</strong> AWS, Hasura y Jira."
+      "description": "Programador fullstack para distintos proyectos de USA, donde se trabajó con las últimas tecnologías de desarrollo; diseño y arquitectura del proyecto. Test unitarios con Jest.<br /><strong>Lenguajes de desarrollo:</strong> React, Node.js y MongoDB con typescript. Trabajo con equipos internacionales.<br /><strong>Herramientas utilizadas:</strong> AWS, Hasura y Jira."
     },
     {
       "date": "2019 \u2013 2021",
@@ -42,12 +47,12 @@
     {
       "date": "2013 \u2013 2019",
       "position": "Desarrollador Web fullstack en <strong>W3</strong>",
-      "description": "Programador en frontend y backend de sitios web tanto en web como en mobile, trabajando con MVC utilizando las tecnologías óptimas para cada tipo de proyecto. Se utilizó CMS Drupal y Wordpress, Framework Codeigniter y se realizó configuraciones de servidor en Windows XP2003.<br /><strong>Lenguajes de desarrollo:</strong> PHP, Codeigniter, Laravel, MySQL, MariaDB, GraphQL, MongoDB, Backbone.js, Angular.js, Node.js, React.js, ReactNative, Boostrap, CSS3 y HTML5.<br /><strong>Herramientas utilizadas:</strong> AWS, Azure, Jenkins, Jira y Bitbucket."
+      "description": "Programador en frontend y backend de sitios web tanto en web como en mobile, donde se trabajó con MVC utilizando las tecnologías óptimas para cada tipo de proyecto. Se utilizó CMS Drupal y Wordpress, Framework Codeigniter y se realizó configuraciones de servidor en Windows XP2003.<br /><strong>Lenguajes de desarrollo:</strong> PHP, Codeigniter, Laravel, MySQL, MariaDB, GraphQL, MongoDB, Backbone.js, Angular.js, Node.js, React.js, ReactNative, Boostrap, CSS3 y HTML5.<br /><strong>Herramientas utilizadas:</strong> AWS, Azure, Jenkins, Jira y Bitbucket."
     },
     {
       "date": "2012 \u2013 2013",
       "position": "Desarrollador Web en <strong>Gameloft</strong>",
-      "description": "Programador en frontend y backend de sitios web y aplicaciones de facebook tanto en web como en mobile, trabajando con MVC utilizando las tecnologías óptimas para cada tipo de proyecto. Se utilizó e investigó APIs como la de Instagram, Twitter, Facebook y Vine.<br /><strong>Lenguajes de desarrollo:</strong> PHP, SQL, jQuery, CSS3, HTML5 y SASS."
+      "description": "Programador en frontend y backend de sitios web y aplicaciones de facebook tanto en web como en mobile, donde se trabajó con MVC utilizando las tecnologías óptimas para cada tipo de proyecto. Se utilizó e investigó APIs como la de Instagram, Twitter, Facebook y Vine.<br /><strong>Lenguajes de desarrollo:</strong> PHP, SQL, jQuery, CSS3, HTML5 y SASS."
     }
   ],
   "educations": [
